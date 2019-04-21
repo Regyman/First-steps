@@ -1,0 +1,236 @@
+Main.cpp
+#include<iostream>
+#include<conio.h>
+#include"list.h"
+using namespace std;
+
+int main() 
+{
+	setlocale(LC_ALL, "Rus");
+	int t=0;
+	list lst1;
+
+	while (t!=-1)
+	{
+		cout << "Введите элемент который будет внесен в конец списка(для окончания введите -1):" << endl;
+		cin >> t;
+		lst1.push_back(t);
+	}
+	int t2=0;
+	while (t2!=-1)
+	{
+		cout << "Введите элемент который будет добавлен в начало списка(для окончания введите -1):" << endl;
+		cin >> t2;
+		lst1.push_front(t2);
+	}
+	
+	int t3=0;
+	while (t3!=-1) 
+	{
+		cout << "Введите элемент который вы хотите добавить в список (для окончания введите -1):" << endl;
+		cin >> t3;
+		int pos;
+
+		cout << "Введите позицию на которую вы хотите его добавить:" << endl;
+		cin >> pos;
+		if (pos > 0)
+         lst1.insertAt(t3, pos);
+	}
+	int pos=0;
+	while (pos!=-1)
+	{
+		cout << "Введите номер элемента который вы хотите удалить из списка(для окончания введите -1):" << endl;
+		cin >> pos;
+		if(pos>0)
+		lst1.removeAt(pos);
+	}
+	int t5=1;
+	while (t5 ==1)
+	{
+		cout << "Введите 1 чтобы удалить элемент из начала списка(для выхода нажмите любую другую клавишу)" << endl;
+		cin >> t5;
+		lst1.pop_front();
+	}
+	int t6=1;
+	while(t6==1)
+	{
+		cout << "Введите 1 чтобы удалить элемент из начала списка(для выхода нажмите любую другую клавишу)" << endl;
+		cin >> t6;
+		lst1.pop_back();
+	}
+	cout << endl;
+
+	for (int i = 0;i < lst1.GetSize();i++) 
+	{
+		cout <<"Элемент списка номер-"<< i <<" ="<< lst1[i] << endl;
+	}
+
+	_getch();
+	return 0;
+}
+
+
+
+list.h
+#pragma once
+class list
+{
+private:
+
+    class node 
+	{
+	public:
+		node *pNext;
+		int info;
+
+		node(int info = 0,node *pNext=nullptr)
+		{
+			this->info = info;
+			this->pNext = pNext;
+		}
+	};
+
+	node *head;
+	int size;
+	
+public:
+	
+	void push_back(int info);
+	int operator[](const int index);
+	list();
+	
+	~list();
+	void push_front(int info);
+	void pop_front();
+	int GetSize();
+	void clear();
+	void pop_back();
+	void removeAt(int index);
+	void insertAt(int value, int index);
+};
+
+
+
+list.cpp
+#include "list.h"
+
+
+
+void list::push_back(int info)
+{
+	if (head == nullptr) 
+	{
+		head = new node(info);
+	}
+
+	else 
+	{
+		node *current = this->head;
+		while (current->pNext != nullptr) 
+		{
+			current = current->pNext;
+		}
+		current->pNext = new node(info);
+
+	}
+	size++;
+}
+
+int  list::operator [](const int index) 
+{
+	int counter = 0;
+	node *current = this->head;
+	while (current != nullptr) 
+	{
+		if (counter == index)
+			return current->info;
+
+		current = current->pNext;
+		counter++;
+	}
+}
+
+list::list()
+{
+	size = 0;
+	head = nullptr;
+}
+
+
+
+list::~list()
+{
+	clear();
+}
+
+void list::push_front(int info) 
+{
+	head = new node(info, head);
+	size++;
+}
+
+void list::pop_front()
+{
+	node *temp = head;
+	head = head->pNext;
+    delete temp;
+	size--;
+}
+
+int list::GetSize() 
+{
+	return size;
+}
+
+void list::clear()
+{
+	while (size)
+		pop_front();
+}
+
+void list::pop_back()
+{
+	removeAt(size - 1);
+}
+
+void list::removeAt(int index)
+{
+	if (index == 0)
+	{
+		pop_front();
+	}
+	else
+	{
+		node *previous = this->head;
+		for (int i = 0;i < index - 1;i++)
+		{
+			previous = previous->pNext;
+		}
+
+		node *ForDelete = previous->pNext;
+		
+		previous->pNext = ForDelete->pNext;
+
+		delete ForDelete;
+		size--;
+	}
+}
+
+void list::insertAt(int value, int index)
+{
+	if (index == 0) 
+	{
+		push_front(value);
+	}
+	else 
+	{
+		node *previous = this->head;
+		for (int i = 0;i < index - 1;i++) 
+		{
+			previous = previous->pNext;
+		}
+		node *NewEl = new node(value, previous->pNext);
+		previous->pNext = NewEl;
+	}
+	size++;
+}
