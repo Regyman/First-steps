@@ -1,0 +1,5 @@
+﻿  Main.cpp
+  Raz.cpp
+  Создание кода...
+c:\users\mediamarkt\source\repos\task 9\task 9\raz.cpp(34): warning C4715: Raz::Equal: значение возвращается не при всех путях выполнения
+  Task 9.vcxproj -> C:\Users\MediaMarkt\source\repos\Task 9\Debug\Task 9.exe
