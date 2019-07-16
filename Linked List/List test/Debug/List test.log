@@ -1,0 +1,5 @@
+﻿  Source.cpp
+  list.cpp
+  Создание кода...
+c:\users\mediamarkt\source\repos\list test\list test\list.cpp(37): warning C4715: list::operator[]: значение возвращается не при всех путях выполнения
+  List test.vcxproj -> C:\Users\MediaMarkt\source\repos\List test\Debug\9 task.exe
