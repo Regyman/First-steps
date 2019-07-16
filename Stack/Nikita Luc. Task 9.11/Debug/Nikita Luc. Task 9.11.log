@@ -1,0 +1,5 @@
+﻿  Source.cpp
+  Stack.cpp
+  Создание кода...
+c:\users\mediamarkt\source\repos\nikita luc. task 9.11\nikita luc. task 9.11\stack.cpp(39): warning C4715: Stack::pop: значение возвращается не при всех путях выполнения
+  Nikita Luc. Task 9.11.vcxproj -> C:\Users\MediaMarkt\source\repos\Nikita Luc. Task 9.11\Debug\Nikita Luc. Task 9.11.exe
