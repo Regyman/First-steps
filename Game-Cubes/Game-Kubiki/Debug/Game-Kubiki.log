@@ -1,0 +1,3 @@
+﻿  Source.cpp
+c:\users\mediamarkt\source\repos\game-kubiki\game-kubiki\source.cpp(18): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Game-Kubiki.vcxproj -> C:\Users\MediaMarkt\source\repos\Game-Kubiki\Debug\Game-Kubiki.exe
