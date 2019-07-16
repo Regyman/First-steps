@@ -1,0 +1,21 @@
+﻿  pch.cpp
+  Task 4 try 2.0.cpp
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(16): error C2065: cout: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(16): error C2065: endl: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(28): error C2065: LC_ALL: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(28): error C3861: setlocale: идентификатор не найден
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(29): error C2065: cout: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(29): error C2065: endl: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(30): error C2065: cin: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(31): error C2065: cout: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(31): error C2065: endl: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(32): error C2065: cin: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(33): error C3861: cos: идентификатор не найден
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(35): error C3861: abs: идентификатор не найден
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(36): error C2065: cout: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(36): error C2065: endl: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(37): error C2065: cout: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(37): error C2065: endl: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(39): error C2065: cout: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(39): error C2065: endl: необъявленный идентификатор
+c:\users\mediamarkt\source\repos\task 4 try 2.0\task 4 try 2.0\task 4 try 2.0.cpp(40): error C3861: _getch: идентификатор не найден
